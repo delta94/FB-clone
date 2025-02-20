@@ -1,0 +1,12 @@
+{
+  "name": "@meta-plugins/configs-syncpack",
+  "version": "1.0.0",
+  "publishConfig": {
+    "access": "public"
+  },
+  "main": "index.js",
+  "devDependencies": {
+    "@types/prettier": "3.0.0",
+    "syncpack": "13.0.0"
+  }
+}

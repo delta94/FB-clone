@@ -1,0 +1,13 @@
+{
+  "name": "@meta-plugins/configs-prettier",
+  "version": "1.0.0",
+  "publishConfig": {
+    "access": "public"
+  },
+  "main": "index.js",
+  "devDependencies": {
+    "@types/prettier": "3.0.0",
+    "prettier": "^2.8.3",
+    "eslint-config-alloy": "5.1.2"
+  }
+}

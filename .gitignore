@@ -1,0 +1,64 @@
+dist/
+coverage/
+
+# .env
+
+.idea
+*.history
+*.sublime-project
+*.sublime-workspace
+
+.module-cache
+.DS_STORE
+*.log*
+*.iml
+*.swp
+*.swo
+
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# dependencies
+**/node_modules
+.pnp
+.pnp.js
+package-lock.json
+
+# testing
+coverage
+
+# next.js
+.next/
+out/
+
+# production
+build/
+production
+public/uploads/**/
+
+# misc
+.DS_Store
+*.pem
+
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# local env files
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# vercel
+.vercel
+
+# common_strings.json
+.enum_manifest.json
+.src_manifest.json
+source_strings.json
+translatedFbts.json

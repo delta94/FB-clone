@@ -1,0 +1,37 @@
+{
+  "exclude": ["node_modules", "build"],
+  "include": ["src/**/*"],
+  "compilerOptions": {
+    "module": "CommonJS",
+    "target": "ES6",
+    "baseUrl": ".",
+    "paths": {
+      "@fb-utils/*": ["./src/utils/*"],
+      "@fb-contexts": ["./src/contexts"],
+      "@fb-error/*": ["./src/error/*"],
+      "@fb-placeholder/*": ["./src/placeholder/*"],
+      "@fb-hooks": ["./src/hooks"],
+      "@fb-layout/*": ["./src/layout/*"],
+      "@fb-text/*": ["./src/text/*"],
+      "@fb-theme/*": ["./src/theme/*"],
+      "@fb-keyboard/*": ["./src/keyboard/*"],
+      "@fb-dump/*": ["./src/dump/*"],
+      "@fb-platform/*": ["./src/platform/*"],
+      "@fb-image/*": ["./src/image/*"],
+      "@fb-toast/*": ["./src/toast/*"],
+      "@fb-icons/*": ["./src/icons/*"],
+      "@fb-event-interaction/*": ["./src/event-interaction/*"],
+      "@fb-focus/*": ["./src/focus/*"],
+      "@fb-pressable/*": ["./src/pressable/*"],
+      "@fb-link/*": ["./src/link/*"],
+      "@fb-button": ["./src/button"],
+      "@fb-network/*": ["./src/network/*"],
+      "@fb-dialog/*": ["./src/dialog/*"],
+      "@fb-glimmer/*": ["./src/glimmer/*"],
+      "@fb-process-ring/*": ["./src/process-ring/*"],
+      "@fb-input/*": ["./src/input/*"],
+      "@fb-tooltip/*": ["./src/tooltip/*"],
+      "@fb-card": ["./src/card"]
+    }
+  }
+}

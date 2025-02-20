@@ -1,0 +1,573 @@
+@font-face {
+  font-family: 'Effra';
+  font-style: normal;
+  font-weight: 300;
+  font-display: fallback;
+  src: url(../../public/font/login/JpNSDuZI5ci.eot );
+  src: url(../../public/font/login/JpNSDuZI5ci.eot) format('embedded-opentype'), url(../../public/font/login/U5J5EOguUzh.woff2) format('woff2'), url(../../public/font/login/NQVIJ5tuJmY.woff) format('woff')
+}
+
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Roboto'), local('Roboto-Regular'),
+    url(../../public/font/c_1vdG88uNh.woff2) format('woff2'),
+    url(../../public/font/KKlOyJQcRfr.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Roboto Italic'), local('Roboto-Italic'),
+    url(../../public/font/pXADmoqqN0T.woff2) format('woff2'),
+    url(../../public/font/4JKQuH0Oopd.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Roboto Bold'), local('Roboto-Bold'),
+    url(../../public/font/zSaFQ46AO2w.woff2) format('woff2'),
+    url(../../public/font/_gCoI-iROin.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: italic;
+  font-weight: 700;
+  src: local('Roboto Bold Italic'), local('Roboto-BoldItalic'),
+    url(../../public/font/Tq0RmTByOSK.woff2) format('woff2'),
+    url(../../public/font/AaoylUgS9_g.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Optimistic Text Normal';
+  font-style: normal;
+  font-weight: normal;
+  src: url(../../public/font/6YirsaXqsap.woff2) format('woff2'),
+    url(../../public/font/A8MP726Y7RW.woff) format('woff'),
+    url(../../public/font/nqnBBWt1cQ8.eot) format('embedded-opentype');
+}
+
+/*FB_PKG_DELIM*/
+@font-face {
+  font-family: 'Optimistic Text Light';
+  font-style: normal;
+  font-weight: 300;
+  src: url(../../public/font/G4CvqQXT71s.woff2) format('woff2'),
+    url(../../public/font/3nJF2AW_2KI.woff) format('woff'),
+    url(../../public/font/lOCZ6cH-l95.eot) format('embedded-opentype');
+}
+
+@font-face {
+  font-family: 'Optimistic Text Normal';
+  font-style: normal;
+  font-weight: normal;
+  src: url(../../public/font/6YirsaXqsap.woff2) format('woff2'),
+    url(../../public/font/A8MP726Y7RW.woff) format('woff'),
+    url(../../public/font/nqnBBWt1cQ8.eot) format('embedded-opentype');
+}
+
+@font-face {
+  font-family: 'Optimistic Text Medium';
+  font-style: normal;
+  font-weight: 500;
+  src: url(../../public/font/ndhgOwkNmDs.woff2) format('woff2'),
+    url(../../public/font/g6ncoEztC_N.woff) format('woff'),
+    url(../../public/font/phfAjnBQdX6.eot) format('embedded-opentype');
+}
+
+@font-face {
+  font-family: 'Optimistic Text Bold';
+  font-style: normal;
+  font-weight: bold;
+  src: url(../../public/font/WF8VhTuShVE.woff2) format('woff2'),
+    url(../../public/font/Oe0HWHR8zW7.woff) format('woff'),
+    url(../../public/font/GWRXKV3XeMW.eot) format('embedded-opentype');
+}
+
+@font-face {
+  font-family: 'Optimistic Text Bold';
+  font-style: normal;
+  font-weight: 700;
+  src: url(../../public/font/WF8VhTuShVE.woff2) format('woff2'),
+    url(../../public/font/Oe0HWHR8zW7.woff) format('woff'),
+    url(../../public/font/GWRXKV3XeMW.eot) format('embedded-opentype');
+}
+
+@font-face {
+  font-family: 'Optimistic Text ExtraBold';
+  font-style: normal;
+  font-weight: 800;
+  src: url(../../public/font/_IxD8PqgShI.woff2) format('woff2'),
+    url(../../public/font/XSfIGfuYAms.woff) format('woff'),
+    url(../../public/font/GWRXKV3XeMW.eot) format('embedded-opentype');
+}
+
+@font-face {
+  font-family: 'Optimistic Text Viet Light';
+  font-style: normal;
+  font-weight: 300;
+  src: url(../../public/font/KjRMIwI5MLI.woff2) format('woff2'),
+    url(../../public/font/2kK0RUn3aHt.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Optimistic Text Viet Normal';
+  font-style: normal;
+  font-weight: normal;
+  src: url(../../public/font/577bYCjitsm.woff2) format('woff2'),
+    url(../../public/font/IOMVSiO_79n.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Optimistic Text Viet Bold';
+  font-style: normal;
+  font-weight: bold;
+  src: url(../../public/font/6sGd9jAF7-G.woff2) format('woff2'),
+    url(../../public/font/tfxfr82lQhK.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Optimistic Text Arbc Light';
+  font-style: normal;
+  font-weight: 300;
+  src: url(../../public/font/1lvRwR8FCtJ.woff2) format('woff2'),
+    url(../../public/font/ffP85_okaMb.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Optimistic Text Arbc Normal';
+  font-style: normal;
+  font-weight: normal;
+  src: url(../../public/font/KandUw__L2Y.woff2) format('woff2'),
+    url(../../public/font/eMwOw8vF5hG.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Optimistic Text Arbc Bold';
+  font-style: normal;
+  font-weight: bold;
+  src: url(../../public/font/Y5UW-giPmlu.woff2) format('woff2'),
+    url(../../public/font/t1juam039_W.woff) format('woff');
+}
+
+/* here Optimistic Text Arbc Bold */
+#facebook .system-fonts--body.mac {
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: subpixel-antialiased
+}
+
+#facebook .system-fonts--body.sf {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, '.SFNSText-Regular', sans-serif
+}
+
+@font-face {
+  font-family: 'Segoe UI Historic';
+  src: local('Arial');
+  unicode-range: U+530-5f4, U+10a0-10ff;
+}
+
+@font-face {
+  font-family: 'Segoe UI Historic';
+  font-weight: 700;
+  src: local('Arial Bold'), local('Arial');
+  unicode-range: U+530-5f4, U+10a0-10ff;
+}
+
+#facebook .system-fonts--body.segoe {
+  font-family: Segoe UI Historic, Segoe UI, Helvetica, Arial, sans-serif
+}
+
+#facebook .system-fonts--body.roboto {
+  font-family: Roboto, Helvetica, Arial, sans-serif
+}
+
+#facebook .system-fonts--body div {
+  font-family: inherit
+}
+
+#facebook .system-fonts--body span {
+  font-family: inherit
+}
+
+#facebook .system-fonts--body a {
+  font-family: inherit
+}
+
+#facebook .system-fonts--body h1, #facebook .system-fonts--body h2, #facebook .system-fonts--body h3, #facebook .system-fonts--body h4, #facebook .system-fonts--body h5, #facebook .system-fonts--body h6, #facebook .system-fonts--body p {
+  font-family: inherit
+}
+
+#facebook .system-fonts--body button, #facebook .system-fonts--body input, #facebook .system-fonts--body label, #facebook .system-fonts--body select, #facebook .system-fonts--body td, #facebook .system-fonts--body textarea {
+  font-family: inherit
+}
+
+#facebook .system-fonts--body code, #facebook .system-fonts--body pre {
+  font-family: Menlo, Consolas, Monaco, monospace
+}
+
+#facebook .system-fonts--body .fixemoji {
+  font-weight: 600
+}
+
+
+@font-face {
+  font-family: 'Fix for Mac Chrome 80';
+  font-weight: 500;
+  src: local('Lucida Grande');
+  unicode-range: U+530-5f4, U+10a0-10ff;
+}
+
+#facebook .system-fonts--macChrome80.sf {
+  font-family: 'Fix for Mac Chrome 80', system-ui, -apple-system,
+    BlinkMacSystemFont, '.SFNSText-Regular', sans-serif;
+}
+
+
+._9dls {
+  overflow-y: scroll !important
+}
+
+._9dls ._6s5d {
+  overflow-y: visible !important
+}
+
+._9t1d {
+  overflow-y: auto !important
+}
+
+._9dls ._6s5d {
+  overflow-y: visible !important
+}
+
+._6s5d {
+  background-color: var(--web-wash);
+  -webkit-font-smoothing: antialiased;
+  overscroll-behavior-y: none
+}
+
+@media (prefers-reduced-motion: reduce) {
+  ._6s5d :not(.always-enable-animations) {
+    animation-duration: 0 !important;
+    animation-name: none !important;
+    transition-duration: 0 !important;
+    transition-property: none !important
+  }
+}
+
+
+form {
+  margin: 0;
+  padding: 0;
+}
+
+label {
+  color: #606770;
+  cursor: default;
+  font-weight: 600;
+  vertical-align: middle;
+}
+
+label input {
+  font-weight: normal;
+}
+
+textarea,
+.inputtext,
+.inputpassword {
+  -webkit-appearance: none;
+  border: 1px solid #ccd0d5;
+  border-radius: 0;
+  margin: 0;
+  padding: 3px;
+}
+
+textarea {
+  max-width: 100%;
+}
+
+select {
+  border: 1px solid #ccd0d5;
+  padding: 2px;
+}
+
+input,
+select,
+textarea {
+  background-color: #fff;
+  color: #1c1e21;
+}
+
+
+html {
+  touch-action: manipulation
+}
+
+body {
+  /* background: #fff; */
+  color: #1c1e21;
+  direction: ltr;
+  line-height: 1.34;
+  margin: 0;
+  padding: 0;
+  unicode-bidi: embed;
+}
+
+body, button, input, label, select, td, textarea {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 12px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #1c1e21;
+  font-size: 13px;
+  font-weight: 600;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 14px;
+}
+
+h4, h5, h6 {
+  font-size: 12px;
+}
+
+p {
+  margin: 1em 0;
+}
+
+b, strong {
+  font-weight: 600;
+}
+
+a {
+  color: #385898;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+button {
+  margin: 0;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+img {
+  border: 0;
+}
+
+td, td.label {
+  text-align: left;
+}
+
+dd {
+  color: #000;
+}
+
+dt {
+  color: #606770;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+abbr {
+  border-bottom: none;
+  text-decoration: none;
+}
+
+hr {
+  background: #dadde1;
+  border-width: 0;
+  color: #dadde1;
+  height: 1px;
+}
+
+.clearfix:after {
+  clear: both;
+  content: '.';
+  display: block;
+  font-size: 0;
+  height: 0;
+  line-height: 0;
+  visibility: hidden
+}
+
+.clearfix {
+  zoom: 1;
+}
+
+
+.datawrap {
+  word-wrap: break-word
+}
+
+.word_break {
+  display: inline-block
+}
+
+.ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap
+}
+
+.aero {
+  opacity: .5
+}
+
+.column {
+  float: left
+}
+
+.center {
+  margin-left: auto;
+  margin-right: auto
+}
+
+
+
+/* 
+ */
+
+.apple {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-family: var(--font-family-apple);
+}
+
+.default {
+  font-family: var(--font-family-default);
+}
+
+.segoe {
+  font-family: var(--font-family-segoe);
+}
+
+/*  */
+
+/* .body-custom,
+.app-custom {
+  background-color: var(--web-wash) !important;
+  -webkit-font-smoothing: antialiased;
+  overscroll-behavior-y: none;
+} */
+
+/* .focused {
+  outline: 2px solid Highlight;
+}
+
+@media (-webkit-min-device-pixel-ratio: 0) {
+  .focused {
+    outline: 5px auto -webkit-focus-ring-color;
+  }
+}
+
+.newFocused {
+  box-shadow:
+    0 0 0 2px var(--always-white),
+    0 0 0 4px var(--base-blue);
+  outline: none;
+} */
+
+/* @media (forced-colors: active) {
+  .newFocused {
+    outline: transparent auto 2px !important;
+  }
+} */
+
+/* .newFocusedInset {
+  box-shadow:
+    inset 0 0 0 2px var(--base-blue),
+    inset 0 0 0 4px var(--always-white);
+  outline: none;
+}
+
+.newFocusedLink {
+  outline: var(--base-blue) auto 2px;
+}
+
+.unfocused {
+  outline: none;
+} */
+
+
+/* .xcza8v6 {
+  color: var(--secondary-icon);
+}
+
+.x2h7rmj {
+  transition-property: color, fill, stroke;
+}
+
+.x1qfuztq {
+  transition-timing-function: var(--fds-soft);
+}
+
+.x1lliihq {
+  display: block;
+}
+
+.x1k90msu {
+  transition-duration: var(--fds-fast);
+} */
+
+/*  */
+
+#facebook .hidden_elem {
+  display: none !important
+}
+
+#facebook .invisible_elem {
+  visibility: hidden
+}
+
+#facebook .accessible_elem {
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px
+}
+
+
+#facebook .accessible_elem_offset {
+  margin: -1px
+}
+
+.direction_ltr {
+  direction: ltr
+}
+
+.direction_rtl {
+  direction: rtl
+}
+
+.text_align_ltr {
+  text-align: left
+}
+
+.text_align_rtl {
+  text-align: right
+}
+
+/*  */
+
+.baseScrollableArea_hideScrollbar ::-webkit-scrollbar {
+  display: none;
+  height: 0;
+  width: 0;
+}
