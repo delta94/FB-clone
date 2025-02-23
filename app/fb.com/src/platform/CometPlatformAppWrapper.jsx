@@ -1,5 +1,5 @@
 import React, { useCallback } from 'react';
-import { CometErrorProjectContext } from '@fb-contexts';
+import { CometErrorProjectContext, CometAccessibilityAlertProvider } from '@fb-contexts';
 import { CometSSRMultipassBoundary } from '@fb-dump/CometSSRMultipassBoundary';
 import { CometErrorBoundary } from '@fb-error/CometErrorBoundary';
 import { recoverableViolation } from '@fb-error/recoverableViolation';
@@ -12,6 +12,14 @@ export const CometPlatformAppWrapper = ({
   children,
   disableTimeSpentLogging = !1,
 }) => {
+  function handleSuspenseCallback() {
+    recoverableViolation(
+      'Top level suspense boundary triggered, a component suspended outside of a CometPlaceholder, description: ' +
+        description,
+      'comet_infra',
+    );
+  }
+
   const fallback = useCallback(() => {
     return !UncaughtErrorFallback ? null : (
       <CometPlaceholder fallback={null}>
@@ -20,18 +28,25 @@ export const CometPlatformAppWrapper = ({
     );
   }, [UncaughtErrorFallback]);
 
+  const ProviderComponent = KeyboardSettingsStateProvider ?? Fragment;
+  const keyCommandDialogs = <CometSetKeyCommandWrapperDialogs />;
+  const accessibilityWrapper = <CometAccessibilityAlertProvider>{children}</CometAccessibilityAlertProvider>;
+
+  const keyCommandContainer = (
+    <TopLevelKeyCommandListener>
+      <CometTransientDialogProvider>
+        {accessibilityWrapper}
+        {keyCommandDialogs}
+      </CometTransientDialogProvider>
+    </TopLevelKeyCommandListener>
+  );
+
+  const providerWrappedComponent = <ProviderComponent>{keyCommandContainer}</ProviderComponent>;
+  const ssrMultipassWrapper = <CometSSRMultipassBoundary>{providerWrappedComponent}</CometSSRMultipassBoundary>;
+
   return (
     <CometErrorProjectContext.Provider value="comet_root">
-      <React.Suspense
-        fallback={null}
-        suspenseCallback={() => {
-          recoverableViolation(
-            'Top level suspense boundary triggered, a component suspended outside of a CometPlaceholder, description: ' +
-              'a',
-            'comet_infra',
-          );
-        }}
-      >
+      <React.Suspense fallback={null} suspenseCallback={handleSuspenseCallback}>
         <CometErrorBoundary
           context={{
             project: 'comet_platform_root_boundary',
@@ -39,18 +54,7 @@ export const CometPlatformAppWrapper = ({
           fallback={fallback}
           type="fatal"
         >
-          <CometSSRMultipassBoundary fallback={null} id="_root">
-            <KeyboardSettingsStateProvider>
-              <TopLevelKeyCommandListener>
-                <CometTransientDialogProvider>
-                  {/* <CometAccessibilityAlertProvider> */}
-                  {children}
-                  {/* </CometAccessibilityAlertProvider> */}
-                  {/* <CometSetKeyCommandWrapperDialogs /> */}
-                </CometTransientDialogProvider>
-              </TopLevelKeyCommandListener>
-            </KeyboardSettingsStateProvider>
-          </CometSSRMultipassBoundary>
+          {ssrMultipassWrapper}
         </CometErrorBoundary>
       </React.Suspense>
     </CometErrorProjectContext.Provider>

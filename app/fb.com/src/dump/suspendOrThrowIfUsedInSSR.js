@@ -1,9 +1,9 @@
 import { executionEnvironment } from '@fb-utils/ExecutionEnvironment';
 
-import { CometSSRClientRender } from './CometSSRClientRender';
+import { CometSSRClientRender } from '@fb-dump/CometSSRClientRender';
 
-export function suspendOrThrowIfUsedInSSR(a) {
+export const suspendOrThrowIfUsedInSSR = (a) => {
   if (!executionEnvironment.isInBrowser) {
     throw CometSSRClientRender(a);
   }
-}
+};

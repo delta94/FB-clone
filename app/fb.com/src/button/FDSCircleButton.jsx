@@ -25,7 +25,7 @@ const BUTTON_ICON_RATIOS = {
 /**
  * @type React.ForwardRefRenderFunction<React.FunctionComponent, import("./types").FDSCircleButtonProps>
  */
-const FDSCircleButton = forwardRef((props, ref) => {
+export const FDSCircleButton = forwardRef((props, ref) => {
   const {
     color_DEPRECATED,
     dataAttributes,
@@ -294,5 +294,3 @@ const buttonBgIconColor = {
     iconColor: 'secondaryButtonIconOnMedia',
   },
 };
-
-export { FDSCircleButton };

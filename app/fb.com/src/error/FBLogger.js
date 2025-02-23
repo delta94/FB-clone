@@ -1,16 +1,24 @@
-/**
- * Changelog:
- * - 09/12/2024
- */
+import { fbError } from '@fb-error/fb-error';
 
-import { ErrorMetadata } from './ErrorMetadata';
-import { FBLogMessage } from './FBLogMessage';
-
-export function FBLogger(projectName, occurAt) {
-  const fbLogMessage = new FBLogMessage(projectName);
-  return occurAt ? fbLogMessage.event(projectName + '.' + occurAt) : fbLogMessage;
-}
-
-FBLogger.addGlobalMetadata = function (a, b, c) {
-  ErrorMetadata.addGlobalMetadata(a, b, c);
-};
+export const {
+  err: createError,
+  ErrorBrowserConsole,
+  ErrorDynamicData,
+  ErrorFilter,
+  ErrorGlobalEventHandler,
+  ErrorGuard,
+  ErrorGuardState,
+  ErrorMetadata,
+  ErrorNormalizeUtils,
+  ErrorPoster,
+  ErrorPubSub,
+  ErrorSerializer,
+  ErrorSetup,
+  ErrorXFBDebug,
+  FBLogger,
+  getErrorSafe,
+  getSimpleHash,
+  TAAL,
+  TAALOpcode,
+  renameFunction,
+} = fbError;

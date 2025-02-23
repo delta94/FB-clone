@@ -8,7 +8,7 @@ import { useMergeRefs } from '@fb-hooks';
 import stylex from '@stylexjs/stylex';
 
 import { BaseStyledButton } from './BaseStyledButton';
-
+import { FDSTooltip } from '@fb-tooltip/FDSTooltip';
 /**
  * @type React.ForwardRefRenderFunction<React.FunctionComponent, import("./types").FDSButtonProps>
  */
@@ -138,13 +138,13 @@ export const FDSButton = forwardRef((props, ref) => {
 
   const fdsButtonWrapper = type === 'overlay' ? <ThemeWrapper>{buttonComp}</ThemeWrapper> : buttonComp;
 
-  // if (tooltip) {
-  //   return (
-  //     <FDSTooltip position={tooltipPosition} tooltip={tooltip}>
-  //       {fdsButtonComp}
-  //     </FDSTooltip>
-  //   );
-  // }
+  if (tooltip) {
+    return (
+      <FDSTooltip position={tooltipPosition} tooltip={tooltip}>
+        {fdsButtonWrapper}
+      </FDSTooltip>
+    );
+  }
 
   return fdsButtonWrapper;
 });

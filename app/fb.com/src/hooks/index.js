@@ -39,3 +39,7 @@ export { useShallowEqualMemo } from './useShallowEqualMemo';
 export { useCometDisplayTimingTrackerForInteraction } from './useCometDisplayTimingTrackerForInteraction';
 export { useTooltipDelayedContent } from './useTooltipDelayedContent';
 export { usePrevious } from './usePrevious';
+export { useCometAccessibilityAlerts } from './useCometAccessibilityAlerts';
+export { useAccessibilityAlerts } from './useAccessibilityAlerts';
+export { useHeroBootloadedComponent } from './useHeroBootloadedComponent';
+export { useKeyCommands } from './useKeyCommands';
